@@ -21,11 +21,27 @@ class IndexController extends Controller
         $reviews = reviews::all();
         $sliders = sliders::all();
 
+        $menu = array();
 
+        $item = array('title'=>'Главная', 'alias'=>'home');
+        array_push($menu, $item);
+        $item = array('title'=>'О программе', 'alias'=>'about');
+        array_push($menu, $item);
+        $item = array('title'=>'Преимущества', 'alias'=>'advantages');
+        array_push($menu, $item);
+        $item = array('title'=>'Продукты', 'alias'=>'products');
+        array_push($menu, $item);
+        $item = array('title'=>'Контакты', 'alias'=>'contact');
+        array_push($menu, $item);
 
-
-
-        return view('site.index');
+        return view('site.index', array(
+            'menu'=>$menu,
+            'abouts'=>$abouts,
+            'advantages'=>$advantages,
+            'products'=>$products,
+            'reviews'=>$reviews,
+            'sliders'=>$sliders,
+        ));
     }
 
 }

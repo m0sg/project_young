@@ -54,8 +54,8 @@
 </section>
 <!-- ========== End Of About Us ========== -->
 
-<!-- ========== Services ========== -->
-<section id="services" class="section grey-bg">
+<!-- ========== Advantages ========== -->
+<section id="advantages" class="section grey-bg">
     <div class="container">
         <div class="section-title">
             <h2><span>My</span> Services</h2>
@@ -101,7 +101,87 @@
         </div><!-- .row -->
     </div><!-- .container -->
 </section>
-<!-- ========== End Of Services ========== -->
+<!-- ========== End Of Advantages ========== -->
+
+<!-- ========== Products ========== -->
+<section id="products" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2><span>My</span> Blogs</h2>
+        </div><!-- .section-title -->
+        <div class="row">
+            <div class="col-sm-4 col-sm-12">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="{{ asset('assets/img/600x400.jpg') }}" title="Blog" alt="Blog" />
+                    </div><!-- .blog-img -->
+                    <div class="blog-contents">
+                        <h3><a href="blog-details.html">New Bog For Web Designer</a></h3>
+                        <div class="blog-meta">
+                            <p>Posted On 25th Oct 2017</p>
+                        </div>
+                        <div class="blog-desc">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy ...</p>
+                        </div>
+                        <div class="blog-action">
+                            <a href="blog-details.html" class="m-btn">Read More</a>
+                        </div>
+                    </div><!-- .blog-contents -->
+                </div><!-- .blog-item -->
+            </div><!-- .col-sm-4 col-sm-12 -->
+
+            <div class="col-sm-4 col-sm-12">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="{{ asset('assets/img/600x400.jpg') }}" title="Blog" alt="Blog" />
+                    </div><!-- .blog-img -->
+                    <div class="blog-contents">
+                        <h3><a href="blog-details.html">Latest Mobile Apps</a></h3>
+                        <div class="blog-meta">
+                            <p>Posted On 25th Oct 2017</p>
+                        </div>
+                        <div class="blog-desc">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy ...</p>
+                        </div>
+                        <div class="blog-action">
+                            <a href="blog-details.html" class="m-btn">Read More</a>
+                        </div>
+                    </div><!-- .blog-contents -->
+                </div><!-- .blog-item -->
+            </div><!-- .col-sm-4 col-sm-12 -->
+
+            <div class="col-sm-4 col-sm-12">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="{{ asset('assets/img/600x400.jpg') }}" title="Blog" alt="Blog" />
+                    </div><!-- .blog-img -->
+                    <div class="blog-contents">
+                        <h3><a href="blog-details.html">You Need Website For Your Business</a></h3>
+                        <div class="blog-meta">
+                            <p>Posted On 25th Oct 2017</p>
+                        </div>
+                        <div class="blog-desc">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy ...</p>
+                        </div>
+                        <div class="blog-action">
+                            <a href="blog-details.html" class="m-btn">Read More</a>
+                        </div>
+                    </div><!-- .blog-contents -->
+                </div><!-- .blog-item -->
+            </div><!-- .col-sm-4 col-sm-12 -->
+
+            <div class="col-md-12 col-xs-12 text-center mt-30">
+                <div class="blog-action mt-30">
+                    <a href="blog.html" class="m-btn">View All</a>
+                </div>
+            </div>
+
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section>
+<!-- ========== End Of Blog ========== -->
+
+
 
 <!-- ========== Resume  ========== -->
 <section id="resume" class="section">
@@ -278,83 +358,7 @@
 <!-- ========== End Of Testimonial ========== -->
 
 
-<!-- ========== Blog ========== -->
-<section id="blog" class="section">
-    <div class="container">
-        <div class="section-title">
-            <h2><span>My</span> Blogs</h2>
-        </div><!-- .section-title -->
-        <div class="row">
-            <div class="col-sm-4 col-sm-12">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="{{ asset('assets/img/600x400.jpg') }}" title="Blog" alt="Blog" />
-                    </div><!-- .blog-img -->
-                    <div class="blog-contents">
-                        <h3><a href="blog-details.html">New Bog For Web Designer</a></h3>
-                        <div class="blog-meta">
-                            <p>Posted On 25th Oct 2017</p>
-                        </div>
-                        <div class="blog-desc">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy ...</p>
-                        </div>
-                        <div class="blog-action">
-                            <a href="blog-details.html" class="m-btn">Read More</a>
-                        </div>
-                    </div><!-- .blog-contents -->
-                </div><!-- .blog-item -->
-            </div><!-- .col-sm-4 col-sm-12 -->
 
-            <div class="col-sm-4 col-sm-12">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="{{ asset('assets/img/600x400.jpg') }}" title="Blog" alt="Blog" />
-                    </div><!-- .blog-img -->
-                    <div class="blog-contents">
-                        <h3><a href="blog-details.html">Latest Mobile Apps</a></h3>
-                        <div class="blog-meta">
-                            <p>Posted On 25th Oct 2017</p>
-                        </div>
-                        <div class="blog-desc">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy ...</p>
-                        </div>
-                        <div class="blog-action">
-                            <a href="blog-details.html" class="m-btn">Read More</a>
-                        </div>
-                    </div><!-- .blog-contents -->
-                </div><!-- .blog-item -->
-            </div><!-- .col-sm-4 col-sm-12 -->
-
-            <div class="col-sm-4 col-sm-12">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="{{ asset('assets/img/600x400.jpg') }}" title="Blog" alt="Blog" />
-                    </div><!-- .blog-img -->
-                    <div class="blog-contents">
-                        <h3><a href="blog-details.html">You Need Website For Your Business</a></h3>
-                        <div class="blog-meta">
-                            <p>Posted On 25th Oct 2017</p>
-                        </div>
-                        <div class="blog-desc">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy ...</p>
-                        </div>
-                        <div class="blog-action">
-                            <a href="blog-details.html" class="m-btn">Read More</a>
-                        </div>
-                    </div><!-- .blog-contents -->
-                </div><!-- .blog-item -->
-            </div><!-- .col-sm-4 col-sm-12 -->
-
-            <div class="col-md-12 col-xs-12 text-center mt-30">
-                <div class="blog-action mt-30">
-                    <a href="blog.html" class="m-btn">View All</a>
-                </div>
-            </div>
-
-        </div><!-- .row -->
-    </div><!-- .container -->
-</section>
-<!-- ========== End Of Blog ========== -->
 
 <!-- ========== Contact ========== -->
 <section id="contact" class="section contact-us grey-bg">

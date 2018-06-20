@@ -38,7 +38,7 @@
 
     <!-- Theme css -->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/color/default.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/color/green.css') }}" rel="stylesheet">
     <!-- End -->
 
     <!--[if lt IE 9]>
