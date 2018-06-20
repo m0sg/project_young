@@ -88,7 +88,7 @@
 
             <div class="col-sm-4">
                 <div class="service-box">
-            <span class="sb-icon">
+            <span class="sb-icon">bvv
               <i class="fa fa-code fa-2x" aria-hidden="true"></i>
             </span>
                     <h4>WEB DEVELOPMENT</h4>

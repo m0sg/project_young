@@ -14,17 +14,17 @@ class AdvantageTableSeeder extends Seeder
     {
         if (advantages::count()  == 0){
             advantages::create([
-                'icon' => '1600x1000',
+                'icon' => 'fas fa-chevron-double-down',
                 'name' => '100%',
                 'text' => 'Уменьшение падежа телят до 100%',
             ]);
             advantages::create([
-                'icon' => '1600x1000',
+                'icon' => 'far fa-weight',
                 'name' => '850',
                 'text' => 'Средний привес телят 8520 г/сутки',
             ]);
             advantages::create([
-                'icon' => '1600x1000',
+                'icon' => 'fal fa-syringe',
                 'name' => '100%',
                 'text' => 'Повышенный иммунитет',
             ]);
