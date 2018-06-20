@@ -21,12 +21,12 @@ class AdvantageTableSeeder extends Seeder
             advantages::create([
                 'icon' => 'far fa-weight',
                 'name' => '850',
-                'text' => 'Средний привес телят 8520 г/сутки',
+                'text' => 'Средний привес телят 850 г/сутки',
             ]);
             advantages::create([
                 'icon' => 'fal fa-syringe',
                 'name' => '100%',
-                'text' => 'Повышенный иммунитет',
+                'text' => '100% Повышенный иммунитет',
             ]);
 
 
