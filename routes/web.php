@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::match(['get', 'post'], '/','IndexController@execute');
+Route::get('/product/{alias}','ProductController@execute');
+Route::auth();
