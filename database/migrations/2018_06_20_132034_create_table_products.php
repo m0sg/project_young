@@ -19,6 +19,12 @@ class CreateTableProducts extends Migration
             $table->string('name', 100);
             $table->string('alias', 100);
             $table->text('text');
+            $table->text('advantage');
+            $table->text('factors');
+            $table->text('composition');
+            $table->text('work');
+            $table->text('manual');
+            $table->text('dopinfo');
             $table->timestamps();
         });
     }

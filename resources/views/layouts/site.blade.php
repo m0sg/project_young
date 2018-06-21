@@ -39,11 +39,17 @@
     <!-- Theme css -->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/color/green.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- End -->
 
     <!--[if lt IE 9]>
     <script src="{{ asset('assets/js/html5shiv.min.js') }}"></script>
     <script src="{{ asset('assets/js/respond.min.js') }}"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <![endif]-->
 </head>
 
@@ -75,11 +81,8 @@
 <!-- Theme Js -->
 <script src="{{ asset('assets/js/jquery.nav.js') }}"></script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>
-<script src="{{ asset('assets/js/home.js') }}"></script><!-- Only For Home page -->
+<script src="{{ asset('assets/js/home.js') }}"></script>
 <!-- End -->
-
-
-
 
 
 </body>

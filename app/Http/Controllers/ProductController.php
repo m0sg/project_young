@@ -36,6 +36,13 @@ class ProductController extends Controller
             $data = [
                 'title' => $product->name,
                 'product' => $product,
+
+
+
+
+
+
+
                 'menu' => $menu
 
             ];
