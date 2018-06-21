@@ -71,7 +71,7 @@
 <section id="advantages" class="section grey-bg">
     <div class="container">
         <div class="section-title">
-            <h2><span>Наши</span> Преимущества</h2>
+            <h2>Наши<span> Преимущества</span></h2>
         </div><!-- .section-title -->
         @if(isset($advantages) && is_object($advantages))
             <div class="row">
@@ -99,7 +99,7 @@
 <section id="products" class="section">
     <div class="container">
         <div class="section-title">
-            <h2><span>Наши</span> Продукты</h2>
+            <h2>Наши<span> Продукты</span></h2>
         </div><!-- .section-title -->
 
         @if(isset($products) && is_object($products))
@@ -170,12 +170,12 @@
 <section id="contact" class="section contact-us grey-bg">
     <div class="container">
         <div class="section-title">
-            <h2>Contact<span> Me</span></h2>
+            <h2>Наши<span> Контакты</span></h2>
         </div><!-- .section-title -->
         <div class="row">
             <div class="col-sm-6 col-xs-12 col-md-6 col-md-offset-1">
                 <div class="contact-form">
-                    <form id="contact_form">
+                    <form action="{{ route('home') }}" method="post" id="contact_form">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -186,19 +186,19 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="sr-only">Email</label>
-                                    <input class="form-control" name="name" placeholder="Email" type="email">
+                                    <input class="form-control" name="Email" placeholder="Email" type="email">
                                 </div>
                             </div><!-- .col-md-6 -->
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="sr-only">Phone</label>
-                                    <input class="form-control" name="name" placeholder="Phone" type="text">
+                                    <input class="form-control" name="Phone" placeholder="Phone" type="text">
                                 </div>
                             </div><!-- .col-md-6 -->
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="sr-only">Website</label>
-                                    <input class="form-control" name="name" placeholder="Website" type="email">
+                                    <input class="form-control" name="Website" placeholder="Website" type="email">
                                 </div>
                             </div><!-- .col-md-6 -->
                             <div class="col-md-12">
@@ -215,6 +215,7 @@
                             </div><!-- .col-md-12 -->
                         </div><!-- .row -->
 
+                        {{ csrf_field() }}
                     </form>
                 </div>
             </div><!-- .col-sm-8 col-xs-12 -->
