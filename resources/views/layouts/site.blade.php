@@ -77,6 +77,11 @@
 <script src="{{ asset('assets/js/custom.js') }}"></script>
 <script src="{{ asset('assets/js/home.js') }}"></script><!-- Only For Home page -->
 <!-- End -->
+
+
+
+
+
 </body>
 <!-- ========== End of Body ========== -->
 </html>

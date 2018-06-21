@@ -1,9 +1,9 @@
 ::selection {
-  background-color: #51d466;
+  background-color: #397b33;
   color: #fff;
 }
 ::-moz-selection {
-  background-color: #51d466;
+  background-color: #397b33;
   color: #fff;
 }
 
@@ -31,7 +31,7 @@
 .owl-nav .owl-next,
 .navbar-toggle,
 .bg-theme {
-	background-color: #51d466;
+	background-color: #397b33;
 }
 
 .section-title h2 span,
@@ -46,11 +46,11 @@
 .pagination > li > span:hover,
 .resume-box h4,
 .widget .widget-title {
-	color:  #51d466;
+	color:  #397b33;
 }
 
 .contact-us .form-control:focus,
 .contact-us textarea.form-control:focus,
 .comment-respond .form-control:focus{
-	border-color: #51d466;
+	border-color: #397b33;
 }

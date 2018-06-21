@@ -12,5 +12,5 @@
 */
 
 Route::match(['get', 'post'], '/','IndexController@execute');
-Route::get('/product/{alias}','ProductController@execute');
+Route::get('/product/{alias}',['uses'=>'ProductController@execute', 'as'=>'product']);
 Route::auth();

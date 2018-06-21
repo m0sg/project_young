@@ -50,6 +50,16 @@
 		    items:1
 		})
 
+
+        $('.testimonial-slider-02').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            items:1,
+            autoplay:true,
+            autoplayTimeout:6000
+        })
+
 	}); // Document Get Ready End here
 
 	/* ---------------------------------------------- /*

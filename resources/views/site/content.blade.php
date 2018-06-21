@@ -1,17 +1,25 @@
-<!-- ========== Home ========== -->
-<section id="home" class="home-banner" data-parallax="scroll" data-image-src="{{ asset('assets/img/1600x1000.jpg') }}">
-    <div class="container">
-        <div class="welcome-text">
-            <h3>Hello! i'm</h3>
-            <h2>Martin Luther</h2>
-            <p>WEB DESIGN | DIGITAL MARKETING | UX DESIGN | WEB DEVELOPMENT | MOBILE APPS</p>
-            <div class="wt-actions">
-                <button class="m-btn lets-talk">Let's talk New</button>
-            </div>
+<!-- ========== Home_Slider ========== -->
+<section id="home">
+    @if (isset($sliders) && is_object($sliders))
+        <div class="owl-carousel testimonial-slider-02">
+            @foreach($sliders as $slide)
+                <div class="item">
+                    <div class="single-testimonial-02 text-center">
+                        <img class="image_item" src="{{ asset('assets/img/' . $slide['image']) }}"
+                             alt="{{ $slide['name'] }}">
+                        <div class="content_item">
+                            <h1>{{ $slide['name'] }}</h1>
+                            <h3>{{ $slide['title'] }}</h3>
+                            <a href="{{ route('product', array('alias'=>$slide->alias)) }}" class="m-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
         </div>
-    </div>
+    @endif
 </section>
-<!-- ========== End Of Home ========== -->
+<!-- ========== End Home_Slider ========== -->
+
 
 <!-- ========== About Us ========== -->
 <section id="about" class="section">
@@ -63,7 +71,7 @@
 <section id="advantages" class="section grey-bg">
     <div class="container">
         <div class="section-title">
-            <h2><span>My</span> Services</h2>
+            <h2><span>Наши</span> Преимущества</h2>
         </div><!-- .section-title -->
 
         <div class="row">
@@ -75,6 +83,7 @@
                     </span>
                         {{--<h4>WEB DESIGN</h4>--}}
                         <div class="sb-desc">
+                            <p><span>{{ $advantage['name'] }}</span></p>
                             <p>{{ $advantage['text'] }}</p>
                         </div><!-- .sb-desc -->
                     </div><!-- .service-box -->
@@ -311,42 +320,7 @@
 <!-- ========== Start Testimonial ========== -->
 <section class="section testimonial-area grey-bg">
     <div class="container">
-        <div class="owl-carousel testimonial-slider">
-            <div class="item">
-                <div class="single-testimonial text-center">
-                    <div class="avtar"><img src="{{ asset('assets/img/100x100.jpg') }}" alt=""></div>
-                    <p>The new common language will be more simple and regular than. It will be more Occidental in fact.
-                        The new common language will be more simple and regular than. It will be more Occidental in
-                        fact.</p>
-                    <div class="clearfix"></div>
-                    <h4>- Ms. Mandy Doe</h4>
-                    <p class="desg">Founder of Mandy</p>
-                </div>
-            </div><!-- .item -->
-            <div class="item">
-                <div class="single-testimonial text-center">
-                    <div class="avtar"><img src="{{ asset('assets/img/100x100.jpg') }}" alt=""></div>
-                    <p>The new common language will be more simple and regular than. It will be more Occidental in fact.
-                        The new common language will be more simple and regular than. It will be more Occidental in
-                        fact.</p>
-                    <div class="clearfix"></div>
-                    <h4>- Ms. Mandy Doe</h4>
-                    <p class="desg">Founder of Mandy</p>
-                </div>
-            </div><!-- .item -->
-            <div class="item">
-                <div class="single-testimonial text-center">
-                    <div class="avtar"><img src="{{ asset('assets/img/100x100.jpg') }}" alt=""></div>
-                    <p>The new common language will be more simple and regular than. It will be more Occidental in fact.
-                        The new common language will be more simple and regular than. It will be more Occidental in
-                        fact.</p>
-                    <div class="clearfix"></div>
-                    <h4>- Ms. Mandy Doe</h4>
-                    <p class="desg">Founder of Mandy</p>
-                </div>
-            </div><!-- .item -->
 
-        </div><!-- .owl-carousel testimonial-slider -->
     </div><!-- .container -->
 </section><!-- .section testimonial-area -->
 <!-- ========== End Of Testimonial ========== -->
