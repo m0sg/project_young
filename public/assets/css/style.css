@@ -101,7 +101,7 @@ button:focus{
   /* section */
 /*-------------------------------------------------------*/
 .section {
-	padding: 100px 0;
+	padding: 70px 0;
 }
 
 .grey-bg{
@@ -1147,6 +1147,9 @@ a.m-btn-01:active {
 	background: transparent;
 	border: 1px solid #fff;
 }
+.testimonial-area {
+	background-color: #ffffff;
+}
 
 .testimonial-area .item {
 	width: 600px;
@@ -1237,9 +1240,9 @@ a.m-btn-01:active {
 }
 
 /*-------------------------------------------------------*/
-  /* Blog */
+  /* product */
 /*-------------------------------------------------------*/
-.blog-item {
+.product-item {
 	background: #fff;
 	border-radius: 10px;
 	padding:0;
@@ -1247,46 +1250,47 @@ a.m-btn-01:active {
 	overflow: hidden;
 	float: left;
 	width: 100%;
+	margin-bottom: 30px;
 }
-.blog-item .blog-contents {
+.product-item .product-contents {
 	padding: 15px;
 }
-.blog-item h3{
+.product-item h3{
 	margin: 0 0 5px;
 	font-weight: 600;
 	font-size: 18px;
 }
-.blog-item h3 a {
+.product-item h3 a {
 	color: #333;
 	text-decoration: none;
 }
-.blog-item .blog-meta{
+.product-item .product-meta{
 	padding: 0 0 10px;
 }
-.blog-item .blog-meta p{
+.product-item .product-meta p{
 	color: #666;
 	font-size: 13px;
 	margin: 0;
 }
-.blog-item p {
+.product-item p {
 	font-size: 15px;
 	line-height: 26px;
 }
-.blog-item .blog-action{
+.product-item .product-action{
 	padding: 10px 0 0;
 }
-.blog-item .blog-action .m-btn {
+.product-item .product-action .m-btn {
 	line-height: 40px;
 	padding: 0 25px;
 }
 @media (max-width: 767px){
-	.blog-item {
+	.product-item {
 		margin: 15px 0;
 	}
 }
 
-/* Blog 01*/
-.blog-item-01 {
+/* product 01*/
+.product-item-01 {
 	background: #fff;
 	padding:0;
 	box-shadow: 0px 0 1px 2px rgba(0,0,0,0.05), 0px 0px 1px 6px rgba(0,0,0,0.05);
@@ -1294,67 +1298,67 @@ a.m-btn-01:active {
 	float: left;
 	width: 100%;
 }
-.blog-item-01 .blog-img {
+.product-item-01 .product-img {
 	position: relative;
 }
-.blog-item-01 .blog-img	.m-btn-01 {
+.product-item-01 .product-img	.m-btn-01 {
 	position: absolute;
 	bottom: -25px;
 	right: 20px;
 }
 
-.blog-item-01 .blog-contents {
+.product-item-01 .product-contents {
 	padding: 35px 15px 15px;
 }
-.blog-item-01 h3{
+.product-item-01 h3{
 	margin: 0 0 5px;
 	font-weight: 600;
 	font-size: 18px;
 }
-.blog-item-01 h3 a {
+.product-item-01 h3 a {
 	color: #333;
 	text-decoration: none;
 }
-.blog-item-01 .blog-meta{
+.product-item-01 .product-meta{
 	padding: 0 0 10px;
 }
-.blog-item-01 .blog-meta p{
+.product-item-01 .product-meta p{
 	color: #666;
 	font-size: 13px;
 	margin: 0;
 }
-.blog-item-01 p {
+.product-item-01 p {
 	font-size: 15px;
 	line-height: 26px;
 }
-.blog-item-01 .blog-action{
+.product-item-01 .product-action{
 	padding: 10px 0 0;
 }
-.blog-item-01 .blog-action .m-btn {
+.product-item-01 .product-action .m-btn {
 	line-height: 40px;
 	padding: 0 25px;
 }
 @media (max-width: 767px){
-	.blog-item-01 {
+	.product-item-01 {
 		margin: 15px 0;
 	}
 }
 
 /*-------------------------------------------------------*/
-  /* Blog Banner*/
+  /* product Banner*/
 /*-------------------------------------------------------*/
 
-.blog-banner {
+.product-banner {
 	padding: 200px 0 100px;
 	text-align: center;
 }
-.blog-banner h2 {
+.product-banner h2 {
 	color: #fff;
 	font-size: 32px;
 	font-weight: 600;
 	margin: 0 0 15px;
 }
-.blog-banner p {
+.product-banner p {
 	color: #fff;
 	width: 550px;
 	max-width: 100%;
@@ -1362,28 +1366,28 @@ a.m-btn-01:active {
 }
 
 @media (max-width: 767px){
-	.blog-banner {
+	.product-banner {
 		padding: 150px 0 100px;
 		text-align: center;
 	}	
 }
 
 /*-------------------------------------------------------*/
-  /* Blog listing*/
+  /* product listing*/
 /*-------------------------------------------------------*/
-.blog-listings {
+.product-listings {
 	padding: 80px 0;
 }
 
-.blog-listings .blog-item {
+.product-listings .product-item {
 	margin-bottom: 30px;
 }
 
 /*-------------------------------------------------------*/
-  /* Blog Details*/
+  /* product Details*/
 /*-------------------------------------------------------*/
 
-.blog-single {
+.product-single {
 	padding: 60px 0;
 }
 
@@ -1665,9 +1669,9 @@ a.m-btn-01:active {
 }
 
 /*-------------------------------------------------------*/
-  /* Blog Sidebar*/
+  /* product Sidebar*/
 /*-------------------------------------------------------*/
-.blog-sidebar {
+.product-sidebar {
 	padding-left: 40px;
 }
 
@@ -1823,7 +1827,7 @@ a.m-btn-01:active {
 }
 
 @media (max-width: 991px){
-	.blog-sidebar {
+	.product-sidebar {
 		width: 300px;
 		padding-left: 0;
 		padding-top: 40px;

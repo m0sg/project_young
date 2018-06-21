@@ -73,23 +73,24 @@
         <div class="section-title">
             <h2><span>Наши</span> Преимущества</h2>
         </div><!-- .section-title -->
-
-        <div class="row">
-            @foreach($advantages as $k=>$advantage)
-                <div class="col-sm-4">
-                    <div class="service-box">
+        @if(isset($advantages) && is_object($advantages))
+            <div class="row">
+                @foreach($advantages as $k=>$advantage)
+                    <div class="col-sm-4">
+                        <div class="service-box">
                     <span class="sb-icon">
                       <i class="{{ $advantage['icon'] }}" aria-hidden="true"></i>
                     </span>
-                        {{--<h4>WEB DESIGN</h4>--}}
-                        <div class="sb-desc">
-                            <p><span>{{ $advantage['name'] }}</span></p>
-                            <p>{{ $advantage['text'] }}</p>
-                        </div><!-- .sb-desc -->
-                    </div><!-- .service-box -->
-                </div><!-- .col-sm-4 -->
-            @endforeach
-        </div><!-- .row -->
+                            {{--<h4>WEB DESIGN</h4>--}}
+                            <div class="sb-desc">
+                                <p><span>{{ $advantage['name'] }}</span></p>
+                                <p>{{ $advantage['text'] }}</p>
+                            </div><!-- .sb-desc -->
+                        </div><!-- .service-box -->
+                    </div><!-- .col-sm-4 -->
+                @endforeach
+            </div><!-- .row -->
+        @endif
     </div><!-- .container -->
 </section>
 <!-- ========== End Of Advantages ========== -->
@@ -98,133 +99,39 @@
 <section id="products" class="section">
     <div class="container">
         <div class="section-title">
-            <h2><span>My</span> Blogs</h2>
-        </div><!-- .section-title -->
-        <div class="row">
-            <div class="col-sm-4 col-sm-12">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="{{ asset('assets/img/600x400.jpg') }}" title="Blog" alt="Blog"/>
-                    </div><!-- .blog-img -->
-                    <div class="blog-contents">
-                        <h3><a href="blog-details.html">New Bog For Web Designer</a></h3>
-                        <div class="blog-meta">
-                            <p>Posted On 25th Oct 2017</p>
-                        </div>
-                        <div class="blog-desc">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy ...</p>
-                        </div>
-                        <div class="blog-action">
-                            <a href="blog-details.html" class="m-btn">Read More</a>
-                        </div>
-                    </div><!-- .blog-contents -->
-                </div><!-- .blog-item -->
-            </div><!-- .col-sm-4 col-sm-12 -->
-
-            <div class="col-sm-4 col-sm-12">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="{{ asset('assets/img/600x400.jpg') }}" title="Blog" alt="Blog"/>
-                    </div><!-- .blog-img -->
-                    <div class="blog-contents">
-                        <h3><a href="blog-details.html">Latest Mobile Apps</a></h3>
-                        <div class="blog-meta">
-                            <p>Posted On 25th Oct 2017</p>
-                        </div>
-                        <div class="blog-desc">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy ...</p>
-                        </div>
-                        <div class="blog-action">
-                            <a href="blog-details.html" class="m-btn">Read More</a>
-                        </div>
-                    </div><!-- .blog-contents -->
-                </div><!-- .blog-item -->
-            </div><!-- .col-sm-4 col-sm-12 -->
-
-            <div class="col-sm-4 col-sm-12">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="{{ asset('assets/img/600x400.jpg') }}" title="Blog" alt="Blog"/>
-                    </div><!-- .blog-img -->
-                    <div class="blog-contents">
-                        <h3><a href="blog-details.html">You Need Website For Your Business</a></h3>
-                        <div class="blog-meta">
-                            <p>Posted On 25th Oct 2017</p>
-                        </div>
-                        <div class="blog-desc">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy ...</p>
-                        </div>
-                        <div class="blog-action">
-                            <a href="blog-details.html" class="m-btn">Read More</a>
-                        </div>
-                    </div><!-- .blog-contents -->
-                </div><!-- .blog-item -->
-            </div><!-- .col-sm-4 col-sm-12 -->
-
-            <div class="col-md-12 col-xs-12 text-center mt-30">
-                <div class="blog-action mt-30">
-                    <a href="blog.html" class="m-btn">View All</a>
-                </div>
-            </div>
-
-        </div><!-- .row -->
-    </div><!-- .container -->
-</section>
-<!-- ========== End Of Blog ========== -->
-
-
-<!-- ========== Resume  ========== -->
-<section id="resume" class="section">
-    <div class="container">
-        <div class="section-title">
-            <h2><span>My</span> Resume</h2>
+            <h2><span>Наши</span> Продукты</h2>
         </div><!-- .section-title -->
 
-        <div class="row">
-            <div class="col-sm-6 col-xs-12">
-                <div class="resume-box">
-                    <h4>WORK</h4>
-                    <div class="resume-row">
-                        <h5>Apple</h5>
-                        <label>OCT 2015 - JUNE 2016</label>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sit amet erat
-                            malesuada interdum. Aenean sodales dui quis leo fermentum scelerisque.</p>
-                    </div><!-- .resume-row -->
+        @if(isset($products) && is_object($products))
+            <div class="row">
+                @foreach($products as $product)
+                    <div class="col-sm-4 col-sm-12">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="{{ asset('assets/img/' . $product['image']) }}"
+                                     title="{{ $product['name'] }}" alt="{{ $product['name'] }}">
+                            </div><!-- .product-img -->
+                            <div class="product-contents">
+                                <h3><a href="{{ route('product', array('alias'=>$product->alias)) }}">{{ $product['name'] }}</a></h3>
+                                <div class="product-desc">
+                                    <p>{{ $product['text'] }}</p>
+                                </div>
+                                <div class="product-action">
+                                    <a href="{{ route('product', array('alias'=>$product->alias)) }}" class="m-btn">Подробнее</a>
+                                </div>
+                            </div><!-- .product-contents -->
+                        </div><!-- .product-item -->
+                    </div><!-- .col-sm-4 col-sm-12 -->
+                @endforeach
+            </div><!-- .row -->
+        @endif
 
-                    <div class="resume-row">
-                        <h5>Google</h5>
-                        <label>OCT 2016 - JUNE 2017</label>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sit amet erat
-                            malesuada interdum. Aenean sodales dui quis leo fermentum scelerisque.</p>
-                    </div><!-- .resume-row -->
-                </div><!-- .resume-box -->
-            </div><!-- .col-sm-6 col-xs-12 -->
-
-            <div class="col-sm-6 col-xs-12">
-                <div class="resume-box">
-                    <h4>EDUCATION</h4>
-                    <div class="resume-row">
-                        <h5>University</h5>
-                        <label>OCT 2010 - JUNE 2013</label>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sit amet erat
-                            malesuada interdum. Aenean sodales dui quis leo fermentum scelerisque.</p>
-                    </div><!-- .resume-row -->
-
-                    <div class="resume-row">
-                        <h5>Design and Art</h5>
-                        <label>OCT 2013 - JUNE 2015</label>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sit amet erat
-                            malesuada interdum. Aenean sodales dui quis leo fermentum scelerisque.</p>
-                    </div><!-- .resume-row -->
-                </div><!-- .resume-box -->
-            </div><!-- .col-sm-6 col-xs-12 -->
-        </div><!-- .row -->
     </div><!-- .container -->
 </section>
-<!-- ========== End Of Resume ========== -->
+<!-- ========== End Of product ========== -->
+
+
+
 
 <!-- ========== CAT ========== -->
 <section class="call-to-action">
@@ -235,92 +142,25 @@
 </section><!-- .call-to-action -->
 <!-- ========== End Of CTA ========== -->
 
-<!-- ========== Work ========== -->
-<section id="our-work" class="section">
-    <div class="container">
-        <div class="section-title">
-            <h2><span>My</span> Portfolio</h2>
-        </div><!-- .section-title -->
-
-        <div class="portfolio-box">
-            <div class="filter">
-                <button type="button" class="control" data-filter="all">All</button>
-                <button type="button" class="control" data-filter=".illustration">Illustration</button>
-                <button type="button" class="control" data-filter=".photoshop">Photoshop</button>
-                <button type="button" class="control" data-filter=".website">Website</button>
-                <button type="button" class="control" data-filter=".apps">Apps</button>
-            </div><!-- .filter -->
-
-            <div class="portfolio-filter">
-                <div class="row">
-                    <div class="col-sm-4 col-xs-6 mix illustration">
-                        <div class="portfolio-col">
-                            <img src="{{ asset('assets/img/450x450.jpg') }}" title="" alt=""/>
-                            <div class="hover">
-                                <h4>Illustration Work</h4>
-                                <label>illustration</label>
-                            </div>
-                        </div>
-                    </div><!-- .col-sm-4 col-sm-12 -->
-                    <div class="col-sm-4 col-xs-6 mix photoshop">
-                        <div class="portfolio-col">
-                            <img src="{{ asset('assets/img/450x450.jpg') }}" title="" alt=""/>
-                            <div class="hover">
-                                <h4>Photoshop Work</h4>
-                                <label>photoshop</label>
-                            </div>
-                        </div>
-                    </div><!-- .col-sm-4 col-sm-12 -->
-                    <div class="col-sm-4 col-xs-6 mix illustration">
-                        <div class="portfolio-col">
-                            <img src="{{ asset('assets/img/450x450.jpg') }}" title="" alt=""/>
-                            <div class="hover">
-                                <h4>Illustration Work</h4>
-                                <label>illustration</label>
-                            </div>
-                        </div>
-                    </div><!-- .col-sm-4 col-sm-12 -->
-
-                    <div class="col-sm-4 col-xs-6 mix photoshop">
-                        <div class="portfolio-col">
-                            <img src="{{ asset('assets/img/450x450.jpg') }}" title="" alt=""/>
-                            <div class="hover">
-                                <h4>Photoshop Work</h4>
-                                <label>photoshop</label>
-                            </div>
-                        </div>
-                    </div><!-- .col-sm-4 col-sm-12 -->
-                    <div class="col-sm-4 col-xs-6 mix website">
-                        <div class="portfolio-col">
-                            <img src="{{ asset('assets/img/450x450.jpg') }}" title="" alt=""/>
-                            <div class="hover">
-                                <h4>Website Work</h4>
-                                <label>Website</label>
-                            </div>
-                        </div>
-                    </div><!-- .col-sm-4 col-sm-12 -->
-                    <div class="col-sm-4 col-xs-6 mix apps">
-                        <div class="portfolio-col">
-                            <img src="{{ asset('assets/img/450x450.jpg') }}" title="" alt=""/>
-                            <div class="hover">
-                                <h4>Apps Work</h4>
-                                <label>App</label>
-                            </div>
-                        </div>
-                    </div><!-- .col-sm-4 col-xs-6 -->
-
-                </div><!-- .row -->
-            </div><!-- .portfolio-filter -->
-
-        </div><!-- .portfolio-box -->
-    </div><!-- .container -->
-</section>
-<!-- ========== End Of Work ========== -->
 
 <!-- ========== Start Testimonial ========== -->
 <section class="section testimonial-area grey-bg">
     <div class="container">
-
+        @if(isset($reviews) && is_object($reviews))
+        <div class="owl-carousel testimonial-slider">
+            @foreach($reviews as $review)
+            <div class="item">
+                <div class="single-testimonial text-center">
+                    <div class="avtar"><img src="{{ asset('assets/img/' . $review['images']) }}" alt=""></div>
+                    <p>{{ $review['text'] }}</p>
+                    <div class="clearfix"></div>
+                    <h4>{{ $review['name'] }}</h4>
+                    <p class="desg">{{ $review['company'] }}</p>
+                </div>
+            </div><!-- .item -->
+                @endforeach
+        </div><!-- .owl-carousel testimonial-slider -->
+            @endif
     </div><!-- .container -->
 </section><!-- .section testimonial-area -->
 <!-- ========== End Of Testimonial ========== -->
