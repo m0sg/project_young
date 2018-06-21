@@ -47,7 +47,7 @@
                         mus.</p>
                     <div class="about-actions">
                         <button class="m-btn lets-talk">Контакты</button>
-                        <button class="m-btn">Скачать программу</button>
+                        <a class="m-btn" href="{{ asset('assets/manual/ПРОГРАММА ПО ПРОФИЛАКТИКЕ И ЛЕЧЕНИЮ ЗАБОЛЕВАНИЙ МОЛОДНЯКА КРС.pdf') }}" download>Скачать программу</a>
                     </div>
                 </div><!-- .personal-info -->
             </div><!-- .col-xs-12 col-sm-5 -->
