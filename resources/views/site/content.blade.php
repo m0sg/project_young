@@ -45,18 +45,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                         Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
                         mus.</p>
-                    <div class="social-link">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div><!-- .social-link -->
                     <div class="about-actions">
-                        <button class="m-btn lets-talk">contact me</button>
-                        <button class="m-btn">download cv</button>
+                        <button class="m-btn lets-talk">Контакты</button>
+                        <button class="m-btn">Скачать программу</button>
                     </div>
                 </div><!-- .personal-info -->
             </div><!-- .col-xs-12 col-sm-5 -->
@@ -108,8 +99,8 @@
                     <div class="col-sm-4 col-sm-12">
                         <div class="product-item">
                             <div class="product-img">
-                                <img src="{{ asset('assets/img/' . $product['image']) }}"
-                                     title="{{ $product['name'] }}" alt="{{ $product['name'] }}">
+                                <a href="{{ route('product', array('alias'=>$product->alias)) }}"><img src="{{ asset('assets/img/' . $product['image']) }}"
+                                                title="{{ $product['name'] }}" alt="{{ $product['name'] }}"></a>
                             </div><!-- .product-img -->
                             <div class="product-contents">
                                 <h3><a href="{{ route('product', array('alias'=>$product->alias)) }}">{{ $product['name'] }}</a></h3>
@@ -130,21 +121,8 @@
 </section>
 <!-- ========== End Of product ========== -->
 
-
-
-
-<!-- ========== CAT ========== -->
-<section class="call-to-action">
-    <div class="container">
-        <h2>I am Available for Freelance</h2>
-        <button class="m-btn m-btn-white">hire me Now</button>
-    </div><!-- .container -->
-</section><!-- .call-to-action -->
-<!-- ========== End Of CTA ========== -->
-
-
 <!-- ========== Start Testimonial ========== -->
-<section class="section testimonial-area grey-bg">
+<section class="section testimonial-area call-to-action">
     <div class="container">
         @if(isset($reviews) && is_object($reviews))
         <div class="owl-carousel testimonial-slider">
@@ -155,7 +133,7 @@
                     <p>{{ $review['text'] }}</p>
                     <div class="clearfix"></div>
                     <h4>{{ $review['name'] }}</h4>
-                    <p class="desg">{{ $review['company'] }}</p>
+                    <p>{{ $review['company'] }}</p>
                 </div>
             </div><!-- .item -->
                 @endforeach
@@ -177,40 +155,34 @@
                 <div class="contact-form">
                     <form action="{{ route('home') }}" method="post" id="contact_form">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="sr-only">Name</label>
-                                    <input class="form-control" name="name" placeholder="Name" type="text">
+                                    <input class="form-control" name="name" placeholder="Имя" type="text">
                                 </div>
                             </div><!-- .col-md-6 -->
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="sr-only">Email</label>
                                     <input class="form-control" name="Email" placeholder="Email" type="email">
                                 </div>
                             </div><!-- .col-md-6 -->
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="sr-only">Phone</label>
-                                    <input class="form-control" name="Phone" placeholder="Phone" type="text">
-                                </div>
-                            </div><!-- .col-md-6 -->
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="sr-only">Website</label>
-                                    <input class="form-control" name="Website" placeholder="Website" type="email">
+                                    <input class="form-control" name="Phone" placeholder="Телефон" type="text">
                                 </div>
                             </div><!-- .col-md-6 -->
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="sr-only">Your message</label>
                                     <textarea class="form-control" name="message" rows="7"
-                                              placeholder="Your message"></textarea>
+                                              placeholder="Ваше сообщение"></textarea>
                                 </div>
                             </div><!-- .col-md-12 -->
                             <div class="col-md-12">
                                 <div class="form-group action">
-                                    <button class="m-btn">SEND MESSAGE</button>
+                                    <button class="m-btn">Отправить</button>
                                 </div>
                             </div><!-- .col-md-12 -->
                         </div><!-- .row -->
@@ -223,22 +195,22 @@
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="contact-info">
                     <i class="fa fa-map-marker"></i>
-                    <h4>Adress:</h4>
-                    <p>123 6th St. <br> Melbourne, FL 32904, USA</p>
+                    <h4>Адрес</h4>
+                    <p>220113 г.Минск<br>ул.Лукьяновича 6, офис 312</p>
                 </div><!-- .contact-info -->
                 <div class="contact-info">
                     <i class="fa fa-envelope"></i>
                     <h4>Email:</h4>
                     <p>
-                        <a href="mailto:example@yourdomain.com">example@yourdomain.com</a>
+                        <a href="mailto:info@mitgroup.by">info@mitgroup.by</a>
                         <br>
-                        <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+                        <a href="mailto:admin@mitgroup.by">admin@mitgroup.by</a>
                     </p>
                 </div><!-- .contact-info -->
                 <div class="contact-info">
                     <i class="fa fa-phone"></i>
-                    <h4>Phone:</h4>
-                    <p>Mob: +01 000 000 000<br>Fax: +01 000 000 000</p>
+                    <h4>Телефоны:</h4>
+                    <p><a href="tel:+375297091587">+375 (29) 709-15-87</a><br><a href="tel:+375172806099">+375 (17) 280-60-99</a></p>
                 </div><!-- .contact-info -->
             </div><!-- .col-sm-4 col-xs-12 -->
         </div><!-- .row -->
