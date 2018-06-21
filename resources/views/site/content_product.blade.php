@@ -23,16 +23,10 @@
                     <div class="tabs__content active">
                         <div class="row">
                             <div class="col-md-6">
-                                <h4>Преимущества</h4>
-                                <ol>
                                     {!!  $product['advantage'] !!}
-                                </ol>
                             </div>
                             <div class="col-md-6">
-                                <h4>Устраняет неблагоприятные факторы</h4>
-                                <ol>
                                     {!! $product['factors'] !!}
-                                </ol>
                             </div>
                         </div>
                     </div>
