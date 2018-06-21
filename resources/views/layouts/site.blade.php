@@ -76,6 +76,7 @@
 <script src="{{ asset('assets/plugin/parallax/parallax.min.js') }}"></script><!-- parallax library -->
 <script src="{{ asset('assets/plugin/mixitup/mixitup.min.js') }}"></script><!-- mixitup -->
 <script src="{{ asset('assets/plugin/owl-carousel/js/owl.carousel.min.js') }}"></script><!-- owl-carousel -->
+
 <!-- End -->
 
 <!-- Theme Js -->

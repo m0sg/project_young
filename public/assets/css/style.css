@@ -1291,6 +1291,9 @@ a.m-btn-01:active {
 	line-height: 40px;
 	padding: 0 25px;
 }
+.product-desc {
+	min-height: 110px;
+}
 @media (max-width: 767px){
 	.product-item {
 		margin: 15px 0;

@@ -6,7 +6,7 @@
             </div><!-- .product-img -->
             <div class="product-contents">
                 <h3>{{ $product['name'] }}</h3>
-                <div class="product-desc">
+                <div>
                     <p>{{ $product['text'] }}</p>
                 </div>
 
