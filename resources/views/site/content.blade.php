@@ -29,16 +29,15 @@
 
             <div class="col-xs-12 col-sm-5">
                 <div class="personal-pic">
-                    <img src="{{ asset('assets/img/550x500.jpg') }}" title="" alt=""/>
+                    <img src="{{ asset('assets/img/project.jpg') }}" title="" alt=""/>
                 </div><!-- .personal-pic -->
             </div><!-- .col-xs-12 col-sm-5 -->
 
             <div class="col-xs-12 col-sm-7">
                 <div class="personal-info">
                     <div class="section-title left">
-                        <h2>О программе<span> "Молодняк"</span></h2>
+                        <h2>О программе<span> "Профилактика и лечение заболеваний молодняка КРС"</span></h2>
                     </div><!-- .section-title -->
-                    <h3>Hello! i'm Martin Luther</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                         Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
                         mus.</p>
@@ -62,7 +61,7 @@
 <section id="advantages" class="section grey-bg">
     <div class="container">
         <div class="section-title">
-            <h2>Наши<span> Преимущества</span></h2>
+            <h2><span>Преимущества</span></h2>
         </div><!-- .section-title -->
         @if(isset($advantages) && is_object($advantages))
             <div class="row">
@@ -90,7 +89,7 @@
 <section id="products" class="section">
     <div class="container">
         <div class="section-title">
-            <h2>Наши<span> Продукты</span></h2>
+            <h2><span>Продукты</span></h2>
         </div><!-- .section-title -->
 
         @if(isset($products) && is_object($products))
@@ -148,7 +147,7 @@
 <section id="contact" class="section contact-us grey-bg">
     <div class="container">
         <div class="section-title">
-            <h2>Наши<span> Контакты</span></h2>
+            <h2><span> Контакты</span></h2>
         </div><!-- .section-title -->
         <div class="row">
             <div class="col-sm-6 col-xs-12 col-md-6 col-md-offset-1">
@@ -220,20 +219,8 @@
 
 <!-- ========== Footer ========== -->
 <footer class="footer">
-    <div class="main-footer text-center">
-        <h4 class="footer-logo">MARTIN LUTHER</h4>
-        <div class="social-link">
-            <ul>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            </ul>
-        </div><!-- .social-link -->
-    </div><!-- .main-footer -->
     <div class="sub-footer  text-center">
-        <p>Copy Right © By Martin Luther 2017-18 | All Rights Reserved.</p>
+        <p>© "Профилактика и лечение заболеваний молодняка КРС" 2018 | Все права защищены.</p>
     </div>
 </footer> <!-- .footer -->
 <!-- ========== End Of Footer ========== -->

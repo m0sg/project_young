@@ -20,7 +20,7 @@
 
     ========================================================================
     -->
-    <title>Martin Luther - Personal Portfolio Template</title>
+    <title>Профилактика и лечение заболеваний молодняка КРС</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/favicon.ico') }}">
 

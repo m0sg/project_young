@@ -347,12 +347,14 @@ a.m-btn-01:active {
     		transition: all .2s ease;
 }
 .header .logo {
-	font-size: 25px;
-	text-transform: uppercase;
 	color: #fff;
 	margin: 0;
 	padding:6px 0;
-	font-weight: 300;
+	font-size: 15px;
+	letter-spacing: 4px;
+	text-transform: none;
+	font-weight: 700;
+	font-family: cursive;
 
 }
 .header .logo a {

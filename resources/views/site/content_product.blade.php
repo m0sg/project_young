@@ -17,7 +17,7 @@
                         <li>Состав</li>
                         <li>Как рабоатет</li>
                         <li>Инструкция</li>
-                        <li>Дополнительная информация</li>
+                        {{--<li>Дополнительная информация</li>--}}
                     </ul>
 
                     <div class="tabs__content active">
@@ -48,3 +48,13 @@
         </div><!-- .product-item -->
     </div>
 </section>
+
+
+<!-- ========== Footer ========== -->
+<footer class="footer">
+    <div class="sub-footer  text-center">
+        <p>© "Профилактика и лечение заболеваний молодняка КРС" 2018 | Все права защищены.</p>
+    </div>
+</footer> <!-- .footer -->
+<!-- ========== End Of Footer ========== -->
+
